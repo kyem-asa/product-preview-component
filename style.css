@@ -71,12 +71,11 @@ body {
 
 .card__img {
   width: 375px;
-  height: 394px;
+  height: 454px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  object-fit: cover;
 }
-
-
 
 .card {
   width: 375px;
@@ -85,13 +84,12 @@ body {
 }
 
 .card__body {
-  width: 375px;
-  padding-bottom: 2em;
+  width: 325px;
+  padding-bottom: .8em;
   padding-left: 25px;
   padding-right: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: white;
   
 }
@@ -123,12 +121,19 @@ body {
   background-color: hsl(158, 36%, 37%);
   color: white;
   border: none;
-  width: 340px;
+  width: 250px;
   padding: 15px;
   font-weight: 700;
   border-radius: 10px;
   text-align: center ;
   align-self: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+}
+
+.card__button:hover {
+  background-color: hsl(158, 30%, 16%);
 }
 
 .large-text {
@@ -147,8 +152,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 25px;
+  gap: 35px;
   margin-bottom: 15px; 
+  padding-left: 12px;
+  /* align-self: flex-start; */
 }
 
 .strikethrough {
@@ -160,9 +167,9 @@ body {
  
 
 .icon {
-  /* background-color: aqua; */
   text-align: center;
-  
+  margin-right: 5px;
+  margin-bottom: -2px;
 }
 
 /*  Media Query */ 
@@ -203,8 +210,12 @@ body {
 
   .card__body {
     background-color: white;
+    width: 375px;
   }
 
+  .card__button {
+    width: 300px;
+  }
   
 .card__img {
   width: 375px;
@@ -212,6 +223,7 @@ body {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 0px;
   border-top-right-radius: 10px;
+  object-fit:cover;
 }
 
 } 
