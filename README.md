@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/product-preview-component.gif)
+![](/product-component-desktop.png)
 
 ### Links
 
